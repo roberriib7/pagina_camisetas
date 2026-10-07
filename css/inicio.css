@@ -1,0 +1,220 @@
+.banner-arriba img{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.banner-arriba h3{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-mundial);
+    padding-bottom: 0rem;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+}
+
+.banner-arriba p{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-p);
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.banner-medio{
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--color-header);
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-medio img{
+    height: 2.5rem;
+}
+
+.boton-compra{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.boton-compra button{
+    padding: 0.2rem;
+    background-color: black;
+    border-radius: 6px;
+    width: 15rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton-compra a{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-fuente-boton-centro);
+    color: white;
+    text-decoration: none;
+}
+
+.ofertas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    gap: 3rem;
+}
+
+.oferta{
+    position: relative;
+}
+
+.descuento{
+    background-color: var(--color-boton-descuento);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: var(--color-boton-descuento);
+    position: absolute;
+    left: -7px;
+    top: -7px;
+    align-items: center;
+}
+
+.descuento p{
+    color: white;
+}
+
+.titulo-camiseta{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-titulo-camiseta);
+    margin-bottom: 1%;
+}
+
+.titulo-precio{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-titulo-camiseta);
+    margin-top: 1%;
+}
+
+.oferta div{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.oferta img{
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.oferta img.zoom {
+     transform: scale(1.1);
+    z-index: 10;
+    position: relative;
+}
+
+.precio-antes{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-titulo-camiseta);
+    color: var(--color-precio-antes);
+    text-decoration: line-through;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.tituloDescuento h3{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-titulo-camiseta);
+    margin-bottom: 0%;
+}
+
+.tituloDescuento p{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-fuente-nav);
+    margin-top: 0.2rem;
+}
+
+.tituloDescuento{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.8rem 0;
+}
+
+@media(max-width: 1400px) {
+    .ofertas {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media(max-width: 1168px) {
+    .banner-arriba img {
+        padding-top: 3rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .banner-arriba h3 {
+        font-size: 2.2rem;
+    }
+
+    .banner-medio {
+        gap: 2rem;
+    }
+
+    .banner-medio img {
+        height: 1.9rem;
+    }
+
+    
+    .boton-compra button {
+        width: 12rem; 
+        height: auto;
+        padding: 0.8rem;
+    }
+    
+    .boton-compra p {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 790px) {
+    .ofertas {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        max-width: 25rem; 
+    }
+
+    .oferta img {
+        height: auto;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .titulo-camiseta {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 750px) {
+    .banner-arriba h3 {
+        font-size: 1.9rem;
+    }
+}
+
+@media(max-width: 668px) {
+    .banner-arriba img {
+        padding-top: 4rem;
+    }
+    
+    .banner-medio {
+        gap: 1.2rem; 
+    }
+}
+
+.boton-carro-oferta{
+    font-family: var(--fuente-mundial);
+    
+}

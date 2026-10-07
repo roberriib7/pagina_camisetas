@@ -1,0 +1,155 @@
+
+.cabezeraSobreNosotros {
+    background-image: url('../img/header_nosotros_arriba.png');
+    background-size: cover;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cabezeraSobreNosotros h3 {
+    color: var(--color-header);
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-h3-nosotros);
+    margin-bottom: 0px;
+}
+
+.cabezeraSobreNosotros p {
+    margin-top: 5px;
+    color: var(--color-header);
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-fuente-nav);
+}
+
+
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+
+.titulo-camiseta{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-titulo-camiseta);
+    margin-bottom: 0px;
+}
+
+.titulo-precio{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-titulo-camiseta);
+}
+
+.texto-catalogo{
+    margin-top: 6rem;
+}
+
+.texto-catalogo h3{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-mundial);
+    padding-bottom: 0rem;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 1rem;
+}
+
+
+.texto-catalogo p{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-p);
+    text-align: center;
+    margin-bottom: 5rem;
+    padding: 0 2rem;
+}
+
+
+.producto{
+    padding-bottom: 2rem;
+    
+}
+
+.producto img{
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.producto img.zoom {
+     transform: scale(1.2);
+    z-index: 10;
+    position: relative;
+}
+
+.flex button{
+    width:60%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.añadirCarroCatalogo{
+    font-family: var(--fuente-mundial);
+    font-size: var(--tamaño-añadir-carrito);
+}
+
+@media(max-width: 1500px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .catalogo {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 35rem; 
+    }
+
+    .flex button {
+        width: 60%;
+    }
+}
+
+@media(max-width: 800px) {
+    .texto-catalogo h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 678px) {
+    .cabezeraSobreNosotros {
+        padding: 20% 6%;
+        align-items: flex-start;
+    }
+
+    .cabezeraSobreNosotros h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .cabezeraSobreNosotros p {
+        display: none;
+    }
+
+    .catalogo {
+        width: 100%;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .catalogo img {
+        height: auto; 
+    }
+
+    .flex button {
+        width: 55%;
+    }}
