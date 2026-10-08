@@ -2,9 +2,9 @@
 
 Página web de venta de camisetas de selecciones para el Mundial 2026 (Estados Unidos, México y Canadá). Proyecto final de la asignatura **Lenguaje de Marcas y Sistemas de Gestión de Información** del primer curso.
 
-🔗 **Demo online:** [https://TU-USUARIO.github.io/NOMBRE-DEL-REPO](https://TU-USUARIO.github.io/NOMBRE-DEL-REPO)
+🔗 **Demo online:** proyectofinalprimercurso.netlify.app
 
-![Captura de la página principal](./img/captura-home.png)
+![Captura de la página principal](./img/imagenPrincipal.png)
 
 ## 📌 Descripción
 
